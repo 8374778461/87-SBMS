@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: welcome
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+  config:
+    import: optional:configserver:http://localhost:2222
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 
+          - "*"
+          - refresh

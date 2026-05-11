@@ -18,6 +18,8 @@ public class MsgRestController {
 
 		String msg =  "Good Morning";
 		
+		//int i = 10/0;
+		
 		return ResponseEntity.status(200)
 							 .header("Customer-Header", "Ashok IT")
 							 .body(msg);
