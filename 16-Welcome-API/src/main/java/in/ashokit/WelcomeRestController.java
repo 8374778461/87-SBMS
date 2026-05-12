@@ -24,4 +24,12 @@ public class WelcomeRestController {
 
 		return msg + "(" + port + ")";
 	}
+	
+	@GetMapping("/welcome-txt")
+	public String getWelcomeTxt() {
+
+		String port = env.getProperty("server.port");
+
+		return "Welcome Text" + "(" + port + ")";
+	}
 }
